@@ -1,0 +1,12 @@
+image: docker:26-cli
+
+stages:
+  - build
+
+build_image:
+  stage: build
+  tags:
+    - global
+  script:
+    - echo "Building Docker image..."
+    - docker build -t $CI_PROJECT_PATH:latest .
