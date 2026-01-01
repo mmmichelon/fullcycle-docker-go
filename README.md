@@ -25,22 +25,34 @@ Full Cycle Rocks!!!
 - Docker Hub
 
 ## 📁 Estrutura Básica
+
+\`\`\`
 .
 ├── Dockerfile
 ├── go.mod
 └── main.go
+\`\`\`
+
 
 
 ## ▶️ Como Executar o Projeto
 
 ### Build da imagem Docker
+### Build da imagem Docker
 
-```bash
+\`\`\`bash
 docker build -t fullcycle-go .
+\`\`\`
 
-Executar o container
-docker run --rm fullcycle-go`
+### Executar o container
 
-📦 Publicar no Docker Hub (Opcional)
+\`\`\`bash
+docker run --rm fullcycle-go
+\`\`\`
+
+### Publicar no Docker Hub (Opcional)
+
+\`\`\`bash
 docker tag fullcycle-go seu-usuario/fullcycle-go:latest
 docker push seu-usuario/fullcycle-go:latest
+\`\`\`
