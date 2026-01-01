@@ -26,12 +26,12 @@ Full Cycle Rocks!!!
 
 ## 📁 Estrutura Básica
 
-\`\`\`
+```
 .
 ├── Dockerfile
 ├── go.mod
 └── main.go
-\`\`\`
+```
 
 
 
@@ -40,19 +40,19 @@ Full Cycle Rocks!!!
 ### Build da imagem Docker
 ### Build da imagem Docker
 
-\`\`\`bash
+```bash
 docker build -t fullcycle-go .
-\`\`\`
+```
 
 ### Executar o container
 
-\`\`\`bash
+```bash
 docker run --rm fullcycle-go
-\`\`\`
+```
 
 ### Publicar no Docker Hub (Opcional)
 
-\`\`\`bash
+```bash
 docker tag fullcycle-go seu-usuario/fullcycle-go:latest
 docker push seu-usuario/fullcycle-go:latest
-\`\`\`
+```
